@@ -13,7 +13,7 @@
 #ifdef USERMOD_DALLASTEMPERATURE
 #include "../usermods/Temperature/usermod_temperature.h"
 #endif
-//#include "usermod_v2_empty.h"
+#include "usermode_rotary_set.h"
 
 void registerUsermods()
 {
@@ -26,5 +26,5 @@ void registerUsermods()
   #ifdef USERMOD_DALLASTEMPERATURE
   usermods.add(new UsermodTemperature());
   #endif
-  //usermods.add(new UsermodRenameMe());
+  usermods.add(new RotaryEncoderSet());
 }
